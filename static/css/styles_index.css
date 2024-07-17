@@ -1,11 +1,37 @@
-<style>
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-    li {
-      display: inline;
-    }
-  </style>
+li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image: url('/static/image/jpm-4.webp'); /* เปลี่ยน path ให้ตรงกับตำแหน่งของภาพ */
+  background-size: cover; /* ทำให้ภาพพื้นหลังครอบคลุมทั้ง jumbotron */
+  background-position: center; /* จัดตำแหน่งภาพพื้นหลังให้อยู่กึ่งกลาง */
+  background-repeat: no-repeat; /* ไม่ให้ภาพพื้นหลังซ้ำ */
+  font-weight: bolder;
+  font-family: Georgia, serif;
+  color: rgb(76, 252, 41); /* ตั้งค่าสีของข้อความเป็นสีขาวเพื่อให้มองเห็นได้ชัดเจนบนภาพพื้นหลัง */
+}
+
+.carousel-inner img {
+  max-width: 60%; /* ปรับขนาดความกว้างของภาพตามที่ต้องการ เช่น 50% */
+  height: auto; /* คงอัตราส่วนของภาพ */
+  display: block; /* แสดงผลแบบบล็อก */
+  margin-left: auto; /* จัดกึ่งกลางภาพ */
+  margin-right: auto; /* จัดกึ่งกลางภาพ */
+}
+
+.carousel-indicators li {
+  width: 10px; /* ปรับขนาดความกว้างของ indicators ตามที่ต้องการ */
+  height: 10px; /* ปรับขนาดความสูงของ indicators ตามที่ต้องการ */
+  border-radius: 50%; /* ทำให้ indicators เป็นวงกลม */
+}
+
+.carousel-indicators {
+  bottom: 20px; /* ปรับตำแหน่งของ indicators ให้อยู่สูงขึ้นจากขอบล่าง */
+}
